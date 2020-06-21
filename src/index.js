@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import GoodsListTable from "./GoodsListTable";
+import Lottery from "./Lottery";
 import "antd/dist/antd.css";
 
-ReactDOM.render(<GoodsListTable />, document.getElementById("root"));
+ReactDOM.render(<Lottery />, document.getElementById("root"));

@@ -42,11 +42,10 @@ const columns = [
 const GoodsListTable = () => {
   const [pageSize, setPageSize] = useState(10);
   const [pageNo, setPageNo] = useState(1);
-  const { loading = false, error, response = {} } = useService(fetchGoodsList, {
+  const { loading = false, response = {} } = useService(fetchGoodsList, {
     pageSize,
     pageNo,
   });
-
   const { list = [], total } = response || {};
   return (
     <div>
